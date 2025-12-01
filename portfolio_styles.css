@@ -1,0 +1,27 @@
+:root{
+  --bg: #f7fbff;
+  --card: #ffffff;
+  --accent: #0b6cff;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --shadow: 0 6px 20px rgba(11,108,255,0.08);
+  font-family: 'Inter', Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;}
+.container{width:92%;max-width:980px;margin:0 auto;padding:28px 0;}
+.hero{background:linear-gradient(90deg,var(--accent),#08306b);color:white;padding:36px 0 56px;border-bottom-left-radius:24px;border-bottom-right-radius:24px;margin-bottom:18px;}
+.hero h1{margin:0;font-size:28px;letter-spacing:0.3px}
+.hero .subtitle{opacity:0.95;margin-top:6px}
+.hero .contact{margin-top:10px;font-size:13px;opacity:0.95}
+.cta{display:inline-block;margin-top:14px;padding:10px 14px;background:white;color:var(--accent);border-radius:8px;text-decoration:none;font-weight:600;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+.card.wide{grid-column:span 2}
+h2{margin:0 0 10px 0;color:var(--accent)}
+h3{margin:0;font-size:15px}
+.muted{color:var(--muted);font-size:13px;margin-left:8px}
+ul{margin:8px 0 0 18px;padding:0}
+.footer{padding:18px 0;margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:740px){.grid{grid-template-columns:1fr}.hero{padding-bottom:40px}}
